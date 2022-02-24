@@ -1,0 +1,67 @@
+.cocktails {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cocktails .headerContainer {
+    font-family: cursive;
+    font-size: 60px;
+}
+
+.cocktails .dropdown-Menu .filter-Button {
+    font-family: cursive;
+    align-items: start;
+}
+
+.cocktailList {
+    width: 70vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+/* MENU ITEM STYLING */
+
+.cocktailItem {
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+.cocktailItem:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.cocktailItem div {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*.cocktailItem h1,*/
+/*.menuItem p {*/
+/*    margin-left: 20px;*/
+/*}*/
+
+@media only screen and (max-width: 1300px) {
+    .cocktailList {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .cocktailList {
+        grid-template-columns: 1fr;
+    }
+}
